@@ -81,6 +81,7 @@ public class EventGenerator {
                 addToCartParams.put("categoryUrl", categories.get(0).getUrl());
                 addToCartParams.put("sellerId", sellerId);
                 addToCartParams.put("productId", faker.commerce().productName());
+                addToCartParams.put("skuId", "skuId".concat(faker.commerce().productName()));
                 String price = faker.commerce().price();
                 addToCartParams.put("price", price);
                 addToCartParams.put("discountedPrice", price);
